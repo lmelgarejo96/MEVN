@@ -1,10 +1,13 @@
 {
-  "name": "project1",
+  "name": "project-mevn-1",
   "version": "1.0.0",
   "description": "Pasantia",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "webpack": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,22 @@
   "bugs": {
     "url": "https://github.com/lmelgarejo96/project1/issues"
   },
-  "homepage": "https://github.com/lmelgarejo96/project1#readme"
+  "homepage": "https://github.com/lmelgarejo96/project1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.8",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
